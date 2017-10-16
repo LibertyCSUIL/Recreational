@@ -10,7 +10,7 @@ package food.menu;
  * @author WARNECHA001
  */
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
 public class FoodMenu {
         public static void main(String[] args) {
         long food_limit = 0; 
@@ -18,16 +18,33 @@ public class FoodMenu {
         long a;
         Scanner var1 = new Scanner(System.in);
         while(food_limit == 0){
-        // use \\ for an escape sequence which is uesd to write a file
+        Map<String, String> dynamic_vars = new HashMap<>();
+        long i = 0;
+        long exit =0;
+        while(exit == 0) {     
+            System.out.print(">: ");
+            Scanner foods = new Scanner(System.in);
+            String food = foods.nextLine();
+            if(food.equals("STOP")){
+                exit += 1;
+            }else{ 
+               dynamic_vars.put("var" + i, food);
+               i += 1;
+            }
+    System.out.println(Arrays. toString(dynamic_vars.entrySet().toArray()));
+            
+        }
+        
         
         
         /*
-        make a list add the input to a list call the list for assignment  
+        make a map add the input to a list call the list for assignment  
         
         */
         
         }
     File foodmenu = new File("C:\\Users\\warnecha001\\Food-Menu\\src\\food\\menu");
+    // use \\ for an escape sequence which is uesd to write a file
     }
     
 }
