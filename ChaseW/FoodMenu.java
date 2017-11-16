@@ -31,20 +31,7 @@ public class FoodMenu {
                dynamic_vars.put("var" + i, food);
                i += 1;
             }
-    System.out.println(Arrays. toString(dynamic_vars.entrySet().toArray()));
-            
-        }
-        
-        
-        
-        /*
-        make a map add the input to a list call the list for assignment  
-        
-        */
-        
-        }
-    File foodmenu = new File("C:\\Users\\warnecha001\\Food-Menu\\src\\food\\menu");
-    // use \\ for an escape sequence which is uesd to write a file
+
     }
     
 }
